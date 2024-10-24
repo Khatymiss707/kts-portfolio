@@ -1,0 +1,423 @@
+@font-face {
+    font-family: "Jet Brains Mono";
+    src: url(../sources/font/JetBrainsMono-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --sombre: #181818; 
+    --poudre: #654A61; 
+    --iris: #560D4A;
+    --cerise: #7B0D42; 
+    --ultramagenta: #B83EA5; 
+    --noir: #000000; 
+    --blanc: #ffffff; 
+}
+
+@media screen and (min-width: 800px) {
+
+    
+body {
+    background-color: var(--sombre);
+    flex-wrap: wrap;
+    display: flex;
+    margin: 0;
+    padding: 1vw; 
+}
+
+.texte {
+    width: 22.5vw;
+    padding: 1vw;
+}
+
+.swiper {
+    width: 73vw;
+    height: 83vh;
+    margin-top: 8vh;
+    margin-right: 0.5vw;
+    border: solid 6px var(--noir);
+}
+
+.swiper-slide {
+    position: relative;
+}
+
+.swiper-button-next {
+    color: var(--blanc);
+    padding-right: 30px;
+    top: 90%;
+}
+
+.logo_titre {
+    position: absolute;
+    top: 0;
+    left: 1vw;
+    width: 100%; 
+    max-width: 470px;
+    z-index: 10;
+}
+
+.intro {
+    padding-top: 31vh;
+    font-family: "Jet Brains Mono";
+    color: var(--blanc);
+    font-size: 20px;
+}
+
+.email {
+    padding-top: 3vh; 
+    font-family: "Jet Brains Mono";
+    color: var(--blanc);
+    font-size: 14px;
+}
+
+.descriptif {
+    font-family: "Jet Brains Mono";
+    color: var(--blanc);
+    font-size: 15px;
+}
+
+.icons {
+    display: flex;
+    padding-right: 5vw; 
+    width: 240px; 
+    justify-content: space-evenly;
+}
+
+button {
+    background-color: var(--noir);
+    border: var(--noir);
+}
+
+.twitter {
+    background-image: url(../sources/twt.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
+}
+
+.youtube {
+    background-image: url(../sources/yt.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
+}
+
+.insta {
+    background-image: url(../sources/insta.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
+}
+
+.linkedin {
+    background-image: url(../sources/linkedin.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
+}
+
+.projets {
+ width: 100vw;
+}
+
+.projet01 {
+    width: 100%;
+    height:100%; 
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.projet02 {
+    width: 100%;
+    height:100%; 
+    object-fit: cover;
+    filter: brightness(70%);
+    background-color: var(--iris);
+}
+
+.projet03 {
+    width: 100%;
+    height:100%; 
+    object-fit: cover;
+    filter: brightness(60%);
+}
+
+.projet04 {
+    width: 100%;
+    height:100%; 
+    object-fit: cover;
+    filter: brightness(60%);
+}
+
+.description_case {
+    position: absolute;
+    background-color: var(--noir);
+    width: 300px;
+    height: 100%; 
+    top: 0; 
+    right: 0; 
+    opacity: 75%;
+}
+
+.titre_projet {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10vh;
+    font-family: "Jet Brains Mono";
+    color: var(--blanc); 
+}
+
+.description_projet {
+    padding: 0 10px;
+    font-family: "Jet Brains Mono";
+    color: var(--blanc); 
+}
+
+a:-webkit-any-link {
+    color: var(--blanc); 
+}
+
+.qualifications {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 30vh; 
+    margin-top: 9vh;
+    background-color: #131313;
+}
+
+.ligne_q {
+    width: 10px; 
+    height: 100%; 
+    display: inline-block;
+    margin-left: -1vw; 
+    background-color: var(--ultramagenta);
+}
+
+}
+
+@media screen and (min-width: 800px) and (max-width: 1100px) {
+
+    .swiper {
+        margin-top: 8vh;
+    }
+
+    .intro {
+        padding-top: 30vh;
+    }
+
+    .icons {
+        padding: 0 0.5vw;
+        width: 140px; 
+    }
+
+    .twitter {
+        height: 35px;
+        width: 35px;
+    }
+    
+    .youtube {
+        height: 35px;
+        width: 35px;
+    }
+    
+    .insta {
+        height: 35px;
+        width: 35px;
+    }
+    
+    .linkedin {
+        height: 35px;
+        width: 35px;
+    }
+
+    .description_case {
+        width: 250px;
+    }
+
+    .titre_projet {
+        padding-top: 1vh;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+
+    body {
+        background-color: var(--sombre);
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .swiper {
+        position: absolute; 
+        width: 100vw;
+        height: 60vh; 
+    }
+
+    .swiper-button-next {
+        display: none; 
+    }
+
+    .logo_titre {
+        position: absolute;
+        top: 0;
+        left: 1vw;
+        max-width: 200px;
+        z-index: 10;
+    }
+
+    .texte {
+        width: 100%;
+        padding: 7vw;
+        margin-top: 58vh;
+    }
+
+    .projet01 {
+        width: 100%;
+        height:100%; 
+        object-fit: cover;
+        filter: brightness(50%);
+    }
+    
+    .projet02 {
+        width: 100%;
+        height:100%; 
+        object-fit: cover;
+        filter: brightness(70%);
+        background-color: var(--iris);
+    }
+    
+    .projet03 {
+        width: 100%;
+        height:100%; 
+        object-fit: cover;
+        filter: brightness(60%);
+    }
+    
+    .projet04 {
+        width: 100%;
+        height:100%; 
+        object-fit: cover;
+        filter: brightness(60%);
+    }
+
+    .intro {
+        font-family: "Jet Brains Mono";
+        color: var(--blanc);
+        font-size: 26px;
+    }
+    
+    .email {
+        position: absolute;
+        top: 0; 
+        right: 0;
+        z-index: 11;
+        padding-top: 6vh; 
+        margin-right: 10px;
+        font-family: "Jet Brains Mono";
+        color: var(--blanc);
+        font-size: 14px;
+    }
+    
+    .descriptif {
+        font-family: "Jet Brains Mono";
+        color: var(--blanc);
+        font-size: 15px;
+    }
+
+    
+.icons {
+    position: absolute;
+    top: 0; 
+    right: 0;
+    display: flex;
+    width: 150px; 
+    justify-content: space-evenly;
+    z-index: 11;
+    margin: 10px 10px;
+}
+
+button {
+    background-color: var(--noir);
+    border: var(--noir);
+}
+
+.twitter {
+    background-image: url(../sources/twt.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
+}
+
+.youtube {
+    background-image: url(../sources/yt.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
+}
+
+.insta {
+    background-image: url(../sources/insta.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
+}
+
+.linkedin {
+    background-image: url(../sources/linkedin.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
+}
+
+
+}
+
+@media screen and (max-width: 380px) {
+
+    .icons {
+        width: 100px; 
+    }
+
+    .twitter {
+        height: 30px;
+        width: 30px;
+    }
+    
+    .youtube {
+        height: 30px;
+        width: 30px;
+    }
+    
+    .insta {
+        height: 30px;
+        width: 30px;
+    }
+
+    .linkedin {
+        height: 30px;
+        width: 30px;
+    }
+
+    .email {
+        z-index: 11;
+        padding-top: 5vh; 
+        font-size: 11px;
+    }
+
+}
