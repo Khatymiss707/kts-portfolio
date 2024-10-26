@@ -30,13 +30,14 @@
     .texte {
         width: 22.5vw;
         padding: 1vw;
+        margin-left: 10px;
     }
 
     .swiper {
         width: 73vw;
         height: 83vh;
         margin-top: 8vh;
-        margin-right: 0.5vw;
+        margin-right: 1vw;
         border: solid 6px var(--noir);
     }
 
@@ -388,7 +389,6 @@
 
     body {
         background-color: var(--sombre);
-        overflow: hidden;
         display: flex;
         flex-wrap: wrap;
         margin: 0;
@@ -552,6 +552,97 @@
 
     .container {
         display: none;
+    }
+
+    .main_image {
+        width: 100%;
+        height: 100%; 
+        object-fit: cover;
+        object-position: 100% 80%;
+        filter: brightness(60%);
+    }
+
+    .projet_contenant {
+        width: 100%;
+        height: 55vh; 
+    }
+
+    .main_title {
+        position: absolute;
+        font-family: "Jet Brains Mono";
+        color: var(--blanc);
+        text-transform: uppercase;
+        font-size: 32px;
+        margin-top: -50px;
+        margin-left: 20px;
+    }
+
+    .sectionp01 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+        height: 100%;
+        background-color: #131313;
+    }
+
+    .sectionp02 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+        height: 100%;
+        background-color: #131313;
+    }
+
+    .sectionp03 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+        height: 100%;
+        background-color: #131313;
+    }
+
+    .sectionp04 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+        height: 100%;
+        background-color: #131313;
+    }
+
+    .lignep01 {
+        position: absolute;
+        width: 10px;
+        height: 100%;
+        display: inline-block;
+        background-color: var(--ultramagenta);
+        z-index: 12;
+    }
+
+    .lignep02 {
+        position: absolute;
+        width: 10px;
+        height: 100%;
+        display: inline-block;
+        background-color: var(--iris);
+        z-index: 12;
+    }
+
+    .lignep03 {
+        position: absolute;
+        width: 10px;
+        height: 100%;
+        display: inline-block;
+        background-color: var(--poudre);
+        z-index: 12;
+    }
+
+    .lignep04 {
+        position: absolute;
+        width: 10px;
+        height: 100%;
+        display: inline-block;
+        background-color: var(--cerise);
+        z-index: 12;
     }
 
 
