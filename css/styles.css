@@ -564,7 +564,7 @@
 
     .projet_contenant {
         width: 100%;
-        height: 55vh; 
+        height: 35vh; 
     }
 
     .main_title {
@@ -572,8 +572,8 @@
         font-family: "Jet Brains Mono";
         color: var(--blanc);
         text-transform: uppercase;
-        font-size: 32px;
-        margin-top: -50px;
+        font-size: 18px;
+        margin-top: -25px;
         margin-left: 20px;
     }
 
