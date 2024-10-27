@@ -19,7 +19,6 @@
 
 @media screen and (min-width: 800px) {
 
-
     body {
         background-color: var(--sombre);
         flex-wrap: wrap;
@@ -27,28 +26,12 @@
         margin: 0;
     }
 
+    /* INTRO --------------------------------------------------------------------------------------------------------*/
+
     .texte {
         width: 22.5vw;
         padding: 1vw;
         margin-left: 10px;
-    }
-
-    .swiper {
-        width: 73vw;
-        height: 83vh;
-        margin-top: 8vh;
-        margin-right: 1vw;
-        border: solid 6px var(--noir);
-    }
-
-    .swiper-slide {
-        position: relative;
-    }
-
-    .swiper-button-next {
-        color: var(--blanc);
-        padding-right: 30px;
-        top: 90%;
     }
 
     .logo_titre {
@@ -96,14 +79,6 @@
         transform: scale(110%);
     }
 
-    .twitter {
-        background-image: url(../sources/twt.svg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 40px;
-        width: 40px;
-    }
-
     .youtube {
         background-image: url(../sources/yt.svg);
         background-size: cover;
@@ -126,6 +101,25 @@
         background-repeat: no-repeat;
         height: 40px;
         width: 40px;
+    }
+
+
+    /* SWIPER --------------------------------------------------------------------------------------------------------*/
+
+    .swiper {
+        width: 73vw;
+        height: 83vh;
+        margin-top: 8vh;
+    }
+
+    .swiper-slide {
+        position: relative;
+    }
+
+    .swiper-button-next {
+        color: var(--blanc);
+        padding-right: 30px;
+        top: 50%;
     }
 
     .projets {
@@ -165,8 +159,8 @@
         position: absolute;
         background-color: var(--noir);
         width: 300px;
-        height: 100%;
-        top: 0;
+        height: 20%;
+        top: 3%;
         right: 0;
         opacity: 75%;
     }
@@ -174,7 +168,8 @@
     .titre_projet {
         padding-left: 10px;
         padding-right: 10px;
-        margin-top: 10vh;
+        margin-top: 3vh;
+        font-size: 18px;
         font-family: "Jet Brains Mono";
         color: var(--blanc);
     }
@@ -189,114 +184,28 @@
         color: var(--blanc);
     }
 
+    .description_projet02 {
+        display: none;
+        padding: 0 10px;
+        font-family: "Jet Brains Mono";
+        color: var(--blanc);
+    }
+
     a:-webkit-any-link {
         color: var(--blanc);
     }
 
-    .titre_q {
-        font-family: "Jet Brains Mono";
-        text-transform: uppercase;
-        color: var(--blanc);
-    }
-
-    .sectionp01 {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100vw;
-        height: 100%;
-        margin-top: 9vh;
-        background-color: var(--noir);
-    }
-
-    .sectionp02 {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100vw;
-        height: 100%;
-        background-color: var(--noir);
-    }
-
-    .sectionp03 {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100vw;
-        height: 100%;
-        background-color: var(--noir);
-    }
-
-    .sectionp04 {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100vw;
-        height: 100%;
-        background-color: var(--noir);
-    }
-
-    .lignep01 {
-        position: absolute;
-        width: 10px;
-        height: 100%;
-        display: inline-block;
-        background-color: var(--ultramagenta);
-        z-index: 12;
-    }
-
-    .lignep02 {
-        position: absolute;
-        width: 10px;
-        height: 100%;
-        display: inline-block;
-        background-color: var(--iris);
-        z-index: 12;
-    }
-
-    .lignep03 {
-        position: absolute;
-        width: 10px;
-        height: 100%;
-        display: inline-block;
-        background-color: var(--poudre);
-        z-index: 12;
-    }
-
-    .lignep04 {
-        position: absolute;
-        width: 10px;
-        height: 100%;
-        display: inline-block;
-        background-color: var(--cerise);
-        z-index: 12;
-    }
-
-    .main_image {
-        width: 100%;
-        height: 100%; 
-        object-fit: cover;
-        object-position: 100% 80%;
-        filter: brightness(60%);
-    }
-
-    .projet_contenant {
-        width: 100%;
-        height: 55vh; 
-    }
-
-    .main_title {
-        position: absolute;
-        font-family: "Jet Brains Mono";
-        color: var(--blanc);
-        text-transform: uppercase;
-        font-size: 32px;
-        margin-top: -50px;
-        margin-left: 20px;
-    }
+    /* QUALIFICATIONS --------------------------------------------------------------------------------------------------------*/
 
     .qualifications {
-        width: 100%; 
+        width: 100%;
         margin-top: 9vh;
     }
 
     .titre_q {
+        font-family: "Jet Brains Mono";
+        text-transform: uppercase;
+        color: var(--blanc);
         display: flex;
         justify-content: center;
         font-size: 3em;
@@ -338,84 +247,165 @@
         display: none;
     }
 
-    .con_log {
-        background-color: var(--sombre);
-        width: 20vw; 
-        height: 100%; 
-        margin-left: 5vw;
+    /* SECTION 01 --------------------------------------------------------------------------------------------------------*/
+
+    .sectionp01 {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        width: 100vw;
+        height: 100%;
+        margin-top: 9vh;
     }
 
-    .con_log.p01 {
-        border: solid 5px var(--ultramagenta); 
+    .lignep01 {
+        position: absolute;
+        width: 10px;
+        height: 100%;
+        display: inline-block;
+        background-color: var(--ultramagenta);
+        z-index: 12;
     }
 
-    .con_log.p02 {
-        border: solid 5px var(--iris); 
+    /* SECTION 02 --------------------------------------------------------------------------------------------------------*/
+
+    .sectionp02 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+        height: 100%;
     }
 
-    .con_log.p03 {
-        border: solid 5px var(--poudre); 
+    .lignep02 {
+        position: absolute;
+        width: 10px;
+        height: 100%;
+        display: inline-block;
+        background-color: var(--iris);
+        z-index: 12;
     }
 
-    .con_log.p04 {
-        border: solid 5px var(--cerise); 
+    /* SECTION 03 --------------------------------------------------------------------------------------------------------*/
+
+    .sectionp03 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+        height: 100%;
     }
 
-    .contexte {
+    .lignep03 {
+        position: absolute;
+        width: 10px;
+        height: 100%;
+        display: inline-block;
+        background-color: var(--poudre);
+        z-index: 12;
+    }
+
+    /* SECTION 04 --------------------------------------------------------------------------------------------------------*/
+
+    .sectionp04 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+        height: 100%;
+    }
+
+    .lignep04 {
+        position: absolute;
+        width: 10px;
+        height: 100%;
+        display: inline-block;
+        background-color: var(--cerise);
+        z-index: 12;
+    }
+
+    /* MODELE PROJET --------------------------------------------------------------------------------------------------------*/
+
+    .main_image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 0 80%;
+        filter: brightness(50%) blur(4px);
+        background-color: var(--sombre);
+    }
+
+    .main_title {
         font-family: "Jet Brains Mono";
-        color: var(--blanc); 
+        color: var(--blanc);
         text-transform: uppercase;
-        margin: 4vh 4vw;
+        font-size: 32px;
+        margin-left: 20px;
+        width: 100%;
+        z-index: 10;
+    }
+
+
+    .con_log {
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 27vw;
+        height: 100%;
+        margin-left: 2vw;
+        margin-bottom: 5vw;
+        z-index: 12;
+    }
+
+    .h2projects {
+        font-family: "Jet Brains Mono";
+        color: var(--blanc);
+        text-transform: uppercase;
+        margin: 4vh 2vw 2vh 2vw;
+    }
+
+    .texte_projet {
+        font-family: "Jet Brains Mono";
+        color: var(--blanc);
+        margin: 2vh 2vw 2vh 2vw;
     }
 
     ul {
         list-style-type: none;
-        padding: 0; 
-        margin: 0; 
+        padding: 0;
+        margin: 0;
     }
 
     li {
         font-family: "Jet Brains Mono";
         color: var(--blanc);
-        text-align: center;
+        margin-left: 2vw;
     }
 
     .last {
         margin-bottom: 4vh;
     }
 
-    .logiciel {
-        font-family: "Jet Brains Mono";
-        color: var(--blanc); 
-        text-transform: uppercase;
-        margin: 1vh 4vw;
-    }
+    /* FOOTER --------------------------------------------------------------------------------------------------------*/
 
-    .role {
-        font-family: "Jet Brains Mono";
-        color: var(--blanc); 
-        text-transform: uppercase;
-        margin: 1vh 4vw;
+    footer {
+        width: 100%;
+        height: 27vh;
+        background-color: var(--sombre);
+        z-index: 15;
+        display: flex;
     }
 
     .logo_footer {
-        margin: 0 auto; 
+        margin: 0 auto;
         width: 100%;
         max-width: 300px;
-        z-index: 10;
     }
-    
+
+    .logo_footer:hover {
+        transform: scale(101%);
+    }
 
 }
 
 @media screen and (min-width: 800px) and (max-width: 1100px) {
 
-    .swiper {
-        margin-top: 8vh;
-    }
+    /* INTRO --------------------------------------------------------------------------------------------------------*/
 
     .intro {
         padding-top: 30vh;
@@ -424,11 +414,6 @@
     .icons {
         padding: 0 0.5vw;
         width: 140px;
-    }
-
-    .twitter {
-        height: 35px;
-        width: 35px;
     }
 
     .youtube {
@@ -446,20 +431,53 @@
         width: 35px;
     }
 
-    .description_case {
-        width: 250px;
+    /* SWIPER --------------------------------------------------------------------------------------------------------*/
+
+    .swiper {
+        margin-top: 9vh;
     }
 
-    .titre_projet {
-        padding-top: 1vh;
+    .description_case {
+        width: 300px;
     }
+
+    /* QUALIFICATIONS --------------------------------------------------------------------------------------------------------*/
 
     .qualifications {
         margin-top: 5vh;
     }
 
+    /* SECTION 01 --------------------------------------------------------------------------------------------------------*/
+
     .sectionp01 {
         margin-top: 5vh;
+    }
+
+    /* MODELE PROJET --------------------------------------------------------------------------------------------------------*/
+
+    .con_log {
+        width: 35vw;
+        margin-left: 3vw;
+    }
+
+    .h2projects {
+        margin: 4vh 2vw;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        font-family: "Jet Brains Mono";
+        color: var(--blanc);
+        margin-left: 2vw;
+    }
+
+    .last {
+        margin-bottom: 4vh;
     }
 
 }
@@ -600,13 +618,13 @@
     }
 
     .qualifications {
-        position: absolute; 
+        position: absolute;
         width: 35%;
         z-index: 12;
         right: 2vw;
-        top: 55vh; 
+        top: 55vh;
         background-color: var(--sombre);
-        border: var(--cerise) 5px solid; 
+        border: var(--cerise) 5px solid;
     }
 
     .titre_q {
@@ -635,7 +653,7 @@
 
     .main_image {
         width: 100%;
-        height: 100%; 
+        height: 100%;
         object-fit: cover;
         object-position: 100% 80%;
         filter: brightness(60%);
@@ -643,7 +661,7 @@
 
     .projet_contenant {
         width: 100%;
-        height: 35vh; 
+        height: 35vh;
     }
 
     .main_title {
@@ -725,7 +743,7 @@
     }
 
     .logo_footer {
-        margin: 0 auto; 
+        margin: 0 auto;
         width: 100%;
         max-width: 200px;
         z-index: 10;
@@ -771,13 +789,13 @@
     }
 
     .qualifications {
-        position: absolute; 
+        position: absolute;
         width: 35%;
         z-index: 12;
         right: 2vw;
-        top: 45vh; 
+        top: 45vh;
         background-color: var(--sombre);
-        border: var(--cerise) 2px solid; 
+        border: var(--cerise) 2px solid;
     }
 
     .titre_q {
