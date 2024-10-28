@@ -122,6 +122,12 @@
         top: 50%;
     }
 
+    .swiper-button-prev {
+        color: var(--blanc);
+        padding-left: 30px;
+        top: 50%;
+    }
+
     .projets {
         width: 100vw;
     }
@@ -695,6 +701,10 @@
         display: none;
     }
 
+    .swiper-button-prev {
+        display: none;
+    }
+
     .logo_titre {
         position: absolute;
         top: 0;
@@ -1144,7 +1154,7 @@
         }
     
         .img0404 {
-            width: 32%; 
+            width: 31%; 
             height: 250px;
             object-fit: cover;
         }
