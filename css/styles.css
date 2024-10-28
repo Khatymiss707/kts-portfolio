@@ -381,11 +381,170 @@
         margin-bottom: 4vh;
     }
 
+    .gallerie {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 65vw;
+        margin-left: 2vw;
+        margin-bottom: 5vw;
+        z-index: 12;
+    }
+
+    .img01 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 5% 0;
+        grid-column: span 2; 
+    }
+
+    .img02 {
+        width: 100%;
+        height: 100%; 
+        object-fit: cover;
+        grid-column: span 2; 
+    }
+
+    .img03 {
+        width: 100%; 
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .img04 {
+        width: 100%; 
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .img05 {
+        width: 100%; 
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .img06 {
+        width: 100%; 
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .gallerie02 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 250px 250px;
+        width: 65vw;
+        margin-left: 2vw;
+        z-index: 12;
+    }
+
+    .img0102 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .img0302 {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .resize {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 94% 0;
+        transform: scale(105%);
+    }
+
+    .img0402 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        grid-column: span 2; 
+    }
+
+    .gallerie03 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 200px 250px;
+        width: 65vw;
+        margin-left: 2vw;
+        z-index: 12;
+    }
+
+    .img0103 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        grid-column: span 2;
+    }
+
+    .img0203 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .img0403 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 5% 0;
+    }
+
+    .img0503 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 60% 0;
+    }
+
+    .gallerie04 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 200px;
+        width: 50vw;
+        margin: 0 auto;
+        z-index: 12;
+        margin-bottom: 2vh;
+    }
+
+    .img0104 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        grid-column: span 3;
+    }
+
+    .img0204 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .img0304 {
+        width: 100%; 
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .img0404 {
+        width: 100%; 
+        height: 100%;
+        object-fit: cover;
+    }
+
+    
+
     /* FOOTER --------------------------------------------------------------------------------------------------------*/
 
     footer {
         width: 100%;
-        height: 27vh;
+        height: 30vh;
         background-color: var(--sombre);
         z-index: 15;
         display: flex;
@@ -461,7 +620,8 @@
     }
 
     .h2projects {
-        margin: 4vh 2vw;
+        font-size: 19px;
+        margin: 2vh 2vw;
     }
 
     ul {
@@ -471,6 +631,7 @@
     }
 
     li {
+        font-size: 14px;
         font-family: "Jet Brains Mono";
         color: var(--blanc);
         margin-left: 2vw;
@@ -479,6 +640,39 @@
     .last {
         margin-bottom: 4vh;
     }
+
+    .texte_projet {
+        font-size: 14px;
+        font-family: "Jet Brains Mono";
+        color: var(--blanc);
+        margin: 2vh 2vw 2vh 2vw;
+    }
+
+    .gallerie {
+        width: 60vw; 
+        margin-left: 1vw;
+    }
+
+    .gallerie02 {
+        width: 60vw; 
+        margin-left: 1vw;
+    }
+
+    .gallerie03 {
+        width: 60vw; 
+        margin-left: 1vw;
+    }
+
+        /* FOOTER --------------------------------------------------------------------------------------------------------*/
+
+        footer {
+            width: 100%;
+            height: 40vh;
+            background-color: var(--sombre);
+            z-index: 15;
+            display: flex;
+            margin-top: 21px; 
+        }
 
 }
 
@@ -665,7 +859,6 @@
     }
 
     .main_title {
-        position: absolute;
         font-family: "Jet Brains Mono";
         color: var(--blanc);
         text-transform: uppercase;
@@ -742,14 +935,241 @@
         z-index: 12;
     }
 
-    .logo_footer {
-        margin: 0 auto;
-        width: 100%;
-        max-width: 200px;
-        z-index: 10;
-    }
+        /* MODELE PROJET --------------------------------------------------------------------------------------------------------*/
 
+        .main_image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 0 80%;
+            filter: brightness(50%) blur(4px);
+            background-color: var(--sombre);
+        }
+    
+        .main_title {
+            font-family: "Jet Brains Mono";
+            color: var(--blanc);
+            text-transform: uppercase;
+            font-size: 22px;
+            margin-left: 20px;
+            width: 100%;
+            z-index: 10;
+            margin-top: 4vh;
+            text-align: center;
+        }
+    
+    
+        .con_log {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 92%;
+            height: 100%;
+            margin-left: 5vw;
+            z-index: 12;
+        }
+    
+        .h2projects {
+            font-family: "Jet Brains Mono";
+            color: var(--blanc);
+            text-transform: uppercase;
+            margin: 4vh 2vw 2vh 2vw;
+            font-size: 14px; 
+        }
+    
+        .texte_projet {
+            font-family: "Jet Brains Mono";
+            color: var(--blanc);
+            margin: 2vh 2vw 2vh 2vw;
+            font-size: 12px; 
+        }
+    
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+    
+        li {
+            font-family: "Jet Brains Mono";
+            color: var(--blanc);
+            margin-left: 2vw;
+            font-size: 12px; 
+        }
+    
+        .last {
+            margin-bottom: 4vh;
+        }
 
+        .gallerie {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 92vw;
+            margin-left: 5vw;
+            margin-bottom: 5vw;
+            margin-top: 2vh;;
+            z-index: 12;
+        }
+    
+        .img01 {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            object-position: 5% 0;
+        }
+    
+        .img02 {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+    
+        .img03 {
+            width: 100%; 
+            height: 300px;
+            object-fit: cover;
+        }
+    
+        .img04 {
+            width: 100%; 
+            height: 300px;
+            object-fit: cover;
+        }
+    
+        .img05 {
+            width: 100%; 
+            height: 300px;
+            object-fit: cover;
+        }
+    
+        .img06 {
+            width: 100%; 
+            height: 300px;
+            object-fit: cover;
+        }
+    
+        .gallerie02 {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 92vw;
+            margin-left: 5vw;
+            margin-bottom: 5vw;
+            margin-top: 2vh;;
+            z-index: 12;
+        }
+    
+        .img0102 {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+    
+        .img0302 {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+        }
+    
+        .resize {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 94% 0;
+            transform: scale(105%);
+        }
+    
+        .img0402 {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+    
+        .gallerie03 {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 92vw;
+            margin-left: 5vw;
+            margin-bottom: 5vw;
+            margin-top: 2vh;;
+            z-index: 12;
+        }
+    
+        .img0103 {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+    
+        .img0203 {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+    
+        .img0403 {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            object-position: 5% 0;
+        }
+    
+        .img0503 {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            object-position: 60% 0;
+        }
+    
+        .gallerie04 {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 92vw;
+            margin-left: 5vw;
+            margin-bottom: 5vw;
+            margin-top: 2vh;;
+            z-index: 12;
+        }
+    
+        .img0104 {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+    
+        .img0204 {
+            width: 33%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .img0304 {
+            width: 33%; 
+            height: 250px;
+            object-fit: cover;
+        }
+    
+        .img0404 {
+            width: 32%; 
+            height: 250px;
+            object-fit: cover;
+        }
+    
+    
+        /* FOOTER --------------------------------------------------------------------------------------------------------*/
+    
+        footer {
+            width: 100%;
+            height: 30vh;
+            background-color: var(--sombre);
+            z-index: 15;
+            display: flex;
+        }
+    
+        .logo_footer {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 200px;
+            z-index: 10;
+        }
+    
+        .logo_footer:hover {
+            transform: scale(101%);
+        }
 }
 
 @media screen and (max-width: 380px) {
@@ -816,6 +1236,12 @@
         font-family: "Jet Brains Mono";
         text-align: center;
         padding: 0 5px;
+    }
+
+    .img0404 {
+        width: 30%; 
+        height: 250px;
+        object-fit: cover;
     }
 
 }
