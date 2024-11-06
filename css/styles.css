@@ -47,7 +47,7 @@
         padding-top: 31vh;
         font-family: "Jet Brains Mono";
         color: var(--blanc);
-        font-size: 28px;
+        font-size: 20px;
     }
 
     .email {
@@ -60,7 +60,7 @@
     .descriptif {
         font-family: "Jet Brains Mono";
         color: var(--blanc);
-        font-size: 28px;
+        font-size: 15px;
     }
 
     .icons {
@@ -136,14 +136,14 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        filter: brightness(100%);
+        filter: brightness(50%);
     }
 
     .projet02 {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        filter: brightness(100%);
+        filter: brightness(70%);
         background-color: var(--iris);
     }
 
@@ -151,21 +151,21 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        filter: brightness(90%);
+        filter: brightness(60%);
     }
 
     .projet04 {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        filter: brightness(80%);
+        filter: brightness(60%);
     }
 
     .description_case {
         position: absolute;
         background-color: var(--noir);
         width: 300px;
-        height: 10%;
+        height: 20%;
         top: 3%;
         right: 0;
         opacity: 75%;
@@ -205,7 +205,7 @@
 
     .qualifications {
         width: 100%;
-        margin-top: 15vh;
+        margin-top: 9vh;
     }
 
     .titre_q {
@@ -260,7 +260,7 @@
         flex-wrap: wrap;
         width: 100vw;
         height: 100%;
-        margin-top: 15vh;
+        margin-top: 9vh;
     }
 
     .lignep01 {
@@ -297,7 +297,6 @@
         flex-wrap: wrap;
         width: 100vw;
         height: 100%;
-        margin-bottom: 30px;
     }
 
     .lignep03 {
@@ -551,6 +550,7 @@
 
     footer {
         width: 100%;
+        height: 30vh;
         background-color: var(--sombre);
         z-index: 15;
         display: flex;
@@ -609,13 +609,13 @@
     /* QUALIFICATIONS --------------------------------------------------------------------------------------------------------*/
 
     .qualifications {
-        margin-top: 15vh;
+        margin-top: 5vh;
     }
 
     /* SECTION 01 --------------------------------------------------------------------------------------------------------*/
 
     .sectionp01 {
-        margin-top: 15vh;
+        margin-top: 5vh;
     }
 
     /* MODELE PROJET --------------------------------------------------------------------------------------------------------*/
@@ -1164,6 +1164,7 @@
     
         footer {
             width: 100%;
+            height: 30vh;
             background-color: var(--sombre);
             z-index: 15;
             display: flex;
