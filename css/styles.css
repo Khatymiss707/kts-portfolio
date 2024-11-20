@@ -19,6 +19,30 @@
 
 @media screen and (min-width: 800px) {
 
+.topnav {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    padding: 7px 0;
+    background-color: var(--noir);
+    overflow: hidden;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Jet Brains Mono";
+  }
+  
+  .topnav a:hover {
+    color: #646464;
+  }
+
     body {
         background-color: var(--sombre);
         flex-wrap: wrap;
@@ -36,8 +60,8 @@
 
     .logo_titre {
         position: absolute;
-        top: 0;
-        left: 1vw;
+        top: 6vh;
+        left: 2vw;
         width: 100%;
         max-width: 470px;
         z-index: 10;
@@ -107,9 +131,9 @@
     /* SWIPER --------------------------------------------------------------------------------------------------------*/
 
     .swiper {
-        width: 73vw;
+        width: 90vw;
         height: 83vh;
-        margin-top: 8vh;
+        margin-top: 6vh;
     }
 
     .swiper-slide {
@@ -136,14 +160,12 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        filter: brightness(50%);
     }
 
     .projet02 {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        filter: brightness(70%);
         background-color: var(--iris);
     }
 
@@ -151,14 +173,12 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        filter: brightness(60%);
     }
 
     .projet04 {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        filter: brightness(60%);
     }
 
     .description_case {
@@ -822,33 +842,69 @@
     }
 
     .qualifications {
-        position: absolute;
-        width: 35%;
-        z-index: 12;
-        right: 2vw;
-        top: 55vh;
-        background-color: var(--sombre);
-        border: var(--cerise) 5px solid;
+        width: 100%;
+        margin-top: 9vh;
     }
 
     .titre_q {
-        display: flex;
-        justify-content: center;
-        font-size: 3vw;
-        color: var(--blanc);
         font-family: "Jet Brains Mono";
         text-transform: uppercase;
-        margin-bottom: 0;
+        color: var(--blanc);
+        display: flex;
+        justify-content: center;
+        font-size: 3em;
+        margin: 10px;
+    }
+
+
+    .container {
+        display: flex;
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        font-family: sans-serif;
+
+    }
+
+    .loop-text {
+        font-family: "Jet Brains Mono";
+        font-size: clamp(1rem, 2vw, 5.5rem);
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 0 0.25em;
+        color: var(--blanc);
+        filter: brightness(50%);
+        animation: loopText 25s infinite linear;
+    }
+
+    @keyframes loopText {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(-100%);
+        }
     }
 
     .text_q {
+        display: none;
+    }
+
+    .sectionp02 {
         display: flex;
-        justify-content: center;
-        font-size: 2vw;
-        color: var(--blanc);
-        font-family: "Jet Brains Mono";
-        text-align: center;
-        padding: 0 5px;
+        flex-wrap: wrap;
+        width: 100vw;
+        height: 100%;
+    }
+
+    .lignep02 {
+        position: absolute;
+        width: 10px;
+        height: 100%;
+        display: inline-block;
+        background-color: var(--iris);
+        z-index: 12;
     }
 
     .container {
@@ -1219,33 +1275,53 @@
     }
 
     .qualifications {
-        position: absolute;
-        width: 35%;
-        z-index: 12;
-        right: 2vw;
-        top: 45vh;
-        background-color: var(--sombre);
-        border: var(--cerise) 2px solid;
+        width: 100%;
+        margin-top: 9vh;
     }
 
     .titre_q {
-        display: flex;
-        justify-content: center;
-        font-size: 3.5vw;
-        color: var(--blanc);
         font-family: "Jet Brains Mono";
         text-transform: uppercase;
-        margin-bottom: 0;
+        color: var(--blanc);
+        display: flex;
+        justify-content: center;
+        font-size: 3em;
+        margin: 10px;
+    }
+
+
+    .container {
+        display: flex;
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        font-family: sans-serif;
+
+    }
+
+    .loop-text {
+        font-family: "Jet Brains Mono";
+        font-size: clamp(1rem, 2vw, 5.5rem);
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 0 0.25em;
+        color: var(--blanc);
+        filter: brightness(50%);
+        animation: loopText 25s infinite linear;
+    }
+
+    @keyframes loopText {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(-100%);
+        }
     }
 
     .text_q {
-        display: flex;
-        justify-content: center;
-        font-size: 3vw;
-        color: var(--blanc);
-        font-family: "Jet Brains Mono";
-        text-align: center;
-        padding: 0 5px;
+        display: none;
     }
 
     .img0404 {
